@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            color: rgb(51, 47, 47);
+            background-color: aliceblue;
+            text-align: center;
+            box-shadow: 0px 0px 10px 1px;
+        }
+        #father{
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        #son, #son_one, #son_two, #son_tree{
+         width: 200px;
+         height: 200px; 
+         background-color: rgb(0, 0, 0);  
+         transform: translate(-5px, -10px);
+        }
+        #son_one{
+            background-color: rgb(152, 103, 199);
+            transform: rotate(50deg);
+            border-radius: 15px;
+            
+        }
+        #son_two{
+            background-color: blue;
+            transform: scale(1.2);
+            border-radius: 50%;
+        }
+        #son_tree{
+            background-color: brown;
+            transform: skew(-5deg, -10deg);
+        }
+        #son  :hover{
+            transform: scale(1.2);
+            border-radius: 15px;
+            transition: all ease-in-out 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <h1>class flexbox</h1>
+            <div id="father">
+                <div id="son"></div>
+                <div id="son_one"></div>
+                <div id="son_two"></div>
+                <div id="son_tree"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
